@@ -11,9 +11,10 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,
-    ElementType.TYPE_USE,
+    ElementType.LOCAL_VARIABLE,
+    ElementType.METHOD,
     ElementType.PARAMETER,
-    ElementType.METHOD
+    ElementType.TYPE_USE
 })
 public @interface Link {
 }
