@@ -13,7 +13,8 @@ import java.lang.annotation.Target;
 @Target({
     ElementType.FIELD,
     ElementType.TYPE_USE,
-    ElementType.PARAMETER
+    ElementType.PARAMETER,
+    ElementType.METHOD
 })
 public @interface Shared {
 }
