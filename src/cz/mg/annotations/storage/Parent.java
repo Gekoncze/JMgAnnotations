@@ -6,8 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-// Applicable only to entity fields.
-// Annotated field just holds reference to its parent object (no ownership).
+/**
+ * Marks field that contains reference to a parent owner object.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,

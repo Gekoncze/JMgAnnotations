@@ -6,9 +6,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-// Applicable only to entity fields.
-// Annotated field owns another object.
-// Owned object can have multiple owners.
+/**
+ * Marks field that owns another object.
+ * The owned object can be owned by multiple objects.
+ * The owners can change at any time.
+ * There can be a cyclic ownership.
+ * When all owners are destroyed, then owned object should be also destroyed.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,

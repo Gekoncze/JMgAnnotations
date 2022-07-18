@@ -6,9 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-// Applicable only to entity fields.
-// Same as Part.
-// Indicates that the field holds data required only for optimization.
+/**
+ * Marks field that holds data required only for optimization.
+ * It should be possible to free or re-create it at any time.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,

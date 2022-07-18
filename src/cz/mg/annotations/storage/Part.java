@@ -6,10 +6,13 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-// Applicable only to entity fields.
-// Annotated field owns another object as its part.
-// Owned object must not have multiple owners.
-// The object can change owner.
+/**
+ * Marks field that owns another object.
+ * The owned object should be owned only by a single object.
+ * The owned object can be moved to another owner.
+ * There must be no cyclic ownership, ie only tree ownership hierarchy is allowed.
+ * When owner is destroyed, then owned object should be either moved to another owner or be destroyed too.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,

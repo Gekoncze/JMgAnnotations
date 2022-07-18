@@ -6,10 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
-// Applicable only to entity fields.
-// Annotated field owns another object as its part.
-// Owned object must not have multiple owners.
-// The object cannot change owner.
+/**
+ * Marks field whose object is a simple value.
+ * Such object should not be shared, especially if it is editable!
+ * For such cases Part or Shared annotation should be used instead.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,
