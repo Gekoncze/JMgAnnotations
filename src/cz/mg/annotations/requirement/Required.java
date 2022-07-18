@@ -5,17 +5,13 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-
 /**
- * Marks field that can be null.
+ * Marks field that can be null only in initialization context.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,
-    ElementType.LOCAL_VARIABLE,
-    ElementType.METHOD,
-    ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Optional {
+public @interface Required {
 }

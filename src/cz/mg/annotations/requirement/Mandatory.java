@@ -6,6 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 
+/**
+ * Marks variable that cannot be null.
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.FIELD,
