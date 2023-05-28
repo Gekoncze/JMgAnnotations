@@ -8,13 +8,12 @@ import java.lang.annotation.Target;
 
 /**
  * Marks service class or field.
- * Service class can only hold references to services, otherwise it should be stateless.
- * Service field can only hold reference to a service.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
     ElementType.TYPE,
-    ElementType.FIELD
+    ElementType.FIELD,
+    ElementType.METHOD
 })
 public @interface Service {
 }
