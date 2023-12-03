@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Marks field that can be null only in initialization context.
+ * Marks variable that can be null only in initialization context.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

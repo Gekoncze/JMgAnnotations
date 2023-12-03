@@ -8,10 +8,9 @@ import java.lang.annotation.Target;
 
 /**
  * Marks field that owns another object.
- * The owned object can be owned by multiple objects.
- * The owners can change at any time.
+ * The owned object can be owned by multiple objects (owners/parents).
  * There can be a cyclic ownership.
- * When all owners are destroyed, then owned object should be also destroyed.
+ * Shared object is destroyed when all of its owners are destroyed.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

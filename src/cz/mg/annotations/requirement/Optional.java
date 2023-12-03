@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that can be null.
+ * Marks variable that can be null.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

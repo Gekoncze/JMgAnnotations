@@ -7,9 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field whose object is a simple value.
- * Such object should not be shared, especially if it is editable!
- * For such cases Part or Shared annotation should be used instead.
+ * Marks field that should not be shared or referenced.
+ * It is exclusively owned by its owner (parent) object.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

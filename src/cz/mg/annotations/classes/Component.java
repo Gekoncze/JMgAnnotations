@@ -8,8 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Marks component class.
- * Universal type of class that does not fit into any other category.
- * It may contain business logic as well as stateful fields.
+ * Components may contain logic as well as mutable fields.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

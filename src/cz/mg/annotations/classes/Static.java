@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 
 /**
  * Marks static classes.
- * Classes that contain only static fields and static methods.
- * It may contain nested static classes.
+ * Static classes contain only static fields and static methods.
+ * Static classes may contain nested static classes.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

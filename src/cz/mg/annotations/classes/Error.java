@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks class which is being thrown as an exception.
+ * Marks class which can be thrown as exception.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

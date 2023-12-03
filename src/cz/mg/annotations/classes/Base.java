@@ -9,10 +9,9 @@ import java.lang.annotation.Target;
 /**
  * Marks base service class.
  * To be used together with {@link Service} annotation.
+ * It allows class constructor parameters.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target({
-    ElementType.TYPE
-})
+@Target(ElementType.TYPE)
 public @interface Base {
 }

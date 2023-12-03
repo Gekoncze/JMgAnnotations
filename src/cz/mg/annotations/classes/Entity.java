@@ -7,8 +7,9 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks data class.
- * Such class should not contain any business logic.
+ * Marks entity class or interface.
+ * Entities only carry data, no logic.
+ * Entities should be mutable.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

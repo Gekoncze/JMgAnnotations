@@ -7,7 +7,10 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks service class or field.
+ * Marks service class, interface or field.
+ * Services should appear to their user as stateless.
+ * Services should be usable as singleton.
+ * Services should not have any constructor parameters.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

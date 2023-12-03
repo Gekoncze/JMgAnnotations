@@ -7,8 +7,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds data required only for optimization.
- * It should be possible to free or re-create it at any time.
+ * Marks fields that only hold data for performance optimization.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

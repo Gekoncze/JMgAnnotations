@@ -8,6 +8,9 @@ import java.lang.annotation.Target;
 
 /**
  * Marks test class.
+ * Test classes are used to test production code.
+ * Test classes should never be used in production code.
+ * Production code should be compilable and runnable without test classes.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

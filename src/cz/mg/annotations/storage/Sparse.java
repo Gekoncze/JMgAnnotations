@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds collection, which may hold null values.
+ * Marks field that holds collection with nullable values.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

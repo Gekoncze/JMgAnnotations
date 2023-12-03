@@ -8,10 +8,10 @@ import java.lang.annotation.Target;
 
 /**
  * Marks field that owns another object.
- * The owned object should be owned only by a single object.
+ * The owned object should be owned only by a single object (owner/parent).
  * The owned object can be moved to another owner.
- * There must be no cyclic ownership, ie only tree ownership hierarchy is allowed.
- * When owner is destroyed, then owned object should be either moved to another owner or be destroyed too.
+ * There may be no cyclic ownership, so only tree ownership hierarchy is allowed.
+ * Owned object is destroyed when its parent object is destroyed.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
