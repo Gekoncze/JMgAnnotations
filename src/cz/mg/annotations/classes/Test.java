@@ -13,6 +13,9 @@ import java.lang.annotation.Target;
  * Production code should be compilable and runnable without test classes.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target({
+    ElementType.TYPE,
+    ElementType.FIELD
+})
 public @interface Test {
 }
