@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds reference to object's parent object.
+ * Marks field that holds reference to a parent object.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

@@ -7,7 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds collection with nullable values.
+ * Marks field that holds a collection of references to parent objects.
+ * @see Parent
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
@@ -17,5 +18,5 @@ import java.lang.annotation.Target;
     ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Sparse {
+public @interface Parents {
 }

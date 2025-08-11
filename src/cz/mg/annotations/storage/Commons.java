@@ -7,9 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds an object, which should not be shared or linked.
- * The object is exclusively owned by current object. Owner cannot be changed.
- * The object can be structured.
+ * Marks field that holds a collection of commons.
+ * @see Common
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
@@ -19,5 +18,5 @@ import java.lang.annotation.Target;
     ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Value {
+public @interface Commons {
 }

@@ -7,7 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds a link to another object (no ownership).
+ * Marks field that holds a link to another object.
+ * There is no ownership.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({

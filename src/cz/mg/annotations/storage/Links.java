@@ -7,10 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that owns another object.
- * The owned object can be owned by multiple objects (owners/parents).
- * There can be a cyclic ownership.
- * Shared object is destroyed when all of its owners are destroyed.
+ * Marks field that holds a collection of links.
+ * @see Link
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
@@ -20,5 +18,5 @@ import java.lang.annotation.Target;
     ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Shared {
+public @interface Links {
 }

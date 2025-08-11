@@ -7,7 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks fields that only hold data for performance optimization.
+ * Marks field that holds object with shared ownership.
+ * There can be a cyclic ownership (graphs allowed).
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
@@ -17,5 +18,5 @@ import java.lang.annotation.Target;
     ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Cache {
+public @interface Common {
 }

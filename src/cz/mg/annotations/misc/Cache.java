@@ -1,4 +1,4 @@
-package cz.mg.annotations.storage;
+package cz.mg.annotations.misc;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,9 +7,8 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds an object, which should not be shared or linked.
- * The object is exclusively owned by current object. Owner cannot be changed.
- * The object can be structured.
+ * Marks fields that holds object(s) only for performance optimization.
+ * The object can be cleared and recreated from source data at any time.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
@@ -19,5 +18,5 @@ import java.lang.annotation.Target;
     ElementType.PARAMETER,
     ElementType.TYPE_USE
 })
-public @interface Value {
+public @interface Cache {
 }
