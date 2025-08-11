@@ -7,8 +7,11 @@ import java.lang.annotation.Target;
 
 
 /**
- * Marks field that holds an object, which should not be shared or linked.
- * The object is exclusively owned by current object. Owner cannot be changed.
+ * Marks field that holds a value object.
+ * The object should not be shared (unless it is a constant).
+ * The object should not be linked by another object.
+ * The object is exclusively owned by current object.
+ * The object's owner cannot be changed.
  * The object can be structured.
  */
 @Retention(RetentionPolicy.RUNTIME)
